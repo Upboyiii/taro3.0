@@ -1,0 +1,138 @@
+
+.goods-batch{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 76px;
+  padding: 0 8px;
+  justify-content: space-between;
+  &__group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item{
+    width: 90px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    &-icon{
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+    }
+    &-text{
+      line-height: 32px;
+      font-size: 20px;
+      color: #ff2340;
+    }
+  }
+}
+
+.goods-list{
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 28px;
+  }
+  &__checkbox{
+    flex-shrink: 0;
+    display: flex;
+    padding-right: 28px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__image{
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+    border-radius: 12px;
+  }
+  &__content{ flex: 1; }
+  &__title{
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+    max-width: 550px;
+    /*  #ifndef rn  */
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*  #endif  */
+  }
+  &__price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ff2340;
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 8px;
+  }
+  &__info{
+    margin-top: 4px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &-left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &-right{ position: relative; }
+    &-text{
+      font-size: 22px;
+      color: #999;
+    }
+  }
+  &__more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 12px;
+    background-color: #f7f8f8;
+    border-radius: 999px;
+    &-dot{
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #aaa;
+    }
+  }
+  &__popup{
+    position: absolute;
+    bottom: -4px;
+    right: 72px;
+    width: 480px;
+    height: 124px;
+    padding-top: 2px;
+    padding-right: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+    &-arrow{
+      position: absolute;
+      right: -12px;
+      bottom: 8px;
+      width: 0;
+      height: 0;
+      border: 0 solid transparent;
+      border-width: 12px 0 12px 12px;
+      border-left-color: #fff;
+    }
+  }
+}

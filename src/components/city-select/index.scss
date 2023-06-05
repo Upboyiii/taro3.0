@@ -1,0 +1,72 @@
+
+.owl-city-select{
+  &__header{
+    position: relative;
+    padding: 12px;
+  }
+  &__title{
+    font-size: 32px;
+    line-height: 72px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  &__btn{
+    position: absolute;
+    z-index: 3;
+    top: 12px;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 16px 20px;
+    &--confirm{ color: #0080ff; right: 12px; }
+    &--cancel { left: 12px }
+  }
+  &__main{
+    position: relative;
+    overflow: hidden;
+    margin: 0 24px;
+    color: #333;
+    font-size: 28px;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+  &__selected{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 32px;
+    border: 0 solid #f2f3f3;
+    border-bottom-width: 1px;
+    &-item{
+      position: relative;
+      line-height: 96px;
+      height: 96px;
+      overflow: hidden;
+      font-size: 28px;
+      margin-left: 32px;
+      max-width: 200px;
+      font-weight: bold;
+      color: #666;
+      /*  #ifndef rn  */
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      /*  #endif  */
+      &--active{
+        color: #ff2340;
+      }
+    }
+    &-active{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 48px;
+      height: 5px;
+      margin-left: -24px;
+      background-color: #ff2340;
+      border-radius: 4px;
+    }
+  }
+  &__list{
+    height: 900px;
+  }
+}

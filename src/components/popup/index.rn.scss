@@ -1,0 +1,24 @@
+@import "./common.scss";
+
+.owl-popup {
+  &__wrapper {
+    position: relative;
+    flex: 1;
+    &--top   { justify-content: flex-start; }
+    &--bottom{ justify-content: flex-end; }
+    &--full  { flex: 1; }
+    &--pageSheet  { flex: 1; }
+    &--center{ align-items: center; justify-content: center; }
+  }
+  &__drag{
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    z-index: 3;
+    width: 64px;
+    height: 8px;
+    margin-left: -32px;
+    background-color: #cccdcd;
+    border-radius: 12px;
+  }
+}

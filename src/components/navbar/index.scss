@@ -1,0 +1,106 @@
+
+.owl-navbar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  background-color: #fff;
+  &__h5{ min-height: 88px; }
+  &__border {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    transform: scaleY(0.5);
+    border: 0 solid #f2f3f3;
+    border-top-width: 1PX;
+  }
+  &__title {
+    position: relative;
+    z-index: 2;
+    max-width: 46%;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 88px;
+    color: #000;
+    font-size: 34px;
+    overflow: hidden;
+    /*  #ifndef rn  */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*  #endif  */
+  }
+  &__left {
+    font-size: 28px;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    height: 100%;
+    &--float{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &--pill{ padding: 0 20px 0 24px; }
+    &-arrow{
+      width: 26px;
+      height: 26px;
+      border-width: 0 0 3px 3px;
+      border-style: solid;
+      border-color: #333;
+      transform: rotate(45deg);
+      margin-right: 8px;
+      &--pill{  width: 20px; height: 20px; margin-left: 8px; }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    font-size: 28px;
+    color: #999;
+    height: 100%;
+    &--float{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &--pill{ padding: 0 24px 0 20px; }
+  }
+  &__action{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &--pill{
+      left: 14px;
+      top: 12px;
+      bottom: 12px;
+      min-width: 174px;
+      color: #000;
+      border-radius: 99px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.07);
+    }
+  }
+  &__sep{
+    width: 1px;
+    height: 36px;
+    overflow: hidden;
+    background-color: #ccc;
+  }
+}

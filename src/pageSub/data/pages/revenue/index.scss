@@ -1,0 +1,116 @@
+
+.data-stats{
+  &__filter{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    &-date{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 32px;
+      height: 100%;
+    }
+    &-label{ font-size: 28px; }
+    &-time{ font-size: 28px; }
+    &-arrow{
+      width: 12px;
+      height: 12px;
+      margin: 0 0 6px 12px;
+      border: 0 solid #666;
+      border-width: 0 0 3px 3px;
+      transform: rotate(-45deg);
+      &--active{
+        border-color: #ff2340;
+        transform: rotate(135deg);
+        margin: 6px 0 0 12px;
+      }
+    }
+  }
+  &__title{
+    font-size: 28px;
+    color: #666;
+    &--large{
+      color: #333;
+      padding: 32px 32px 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+  &__num{
+    font-size: 40px;
+    margin-top: 16px;
+    font-weight: bold;
+    &--large{ font-size: 48px; margin-top: 0; }
+    &--primary{ color: #0080ff; }
+  }
+  &__unit{
+    font-size: 26px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    &--primary{ color: #0080ff; }
+  }
+  &__body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item{
+    position: relative;
+    width: 50%;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    &--large{
+      width: auto;
+      padding: 16px 32px;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+  &__footer{
+    font-size: 20px;
+    color: #999;
+    padding: 0 32px 32px;
+  }
+  &__desc{
+    margin-top: 12px;
+    font-size: 22px;
+    color: #999;
+    &--green{ color: #00c35c; margin-left: 8px; }
+    &--red  { color: #ff3447; margin-left: 8px; }
+    &-wrap{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__percentage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 32px;
+  }
+  &__percent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 64px;
+    &-icon{
+      width: 28px;
+      height: 28px;
+      margin-right: 16px;
+      background-color: #0080ff;
+      border-radius: 6px;
+      &--loss{ background-color: #f44970; }
+      &--small{ width: 20px; height: 20px; margin-right: 12px; }
+    }
+    &-text{
+      color: #666;
+      font-size: 28px;
+      &--small{ font-size: 24px; }
+    }
+  }
+}

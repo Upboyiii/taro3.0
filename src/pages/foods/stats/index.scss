@@ -1,0 +1,180 @@
+.foods-stats {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+
+  &__item {
+    position: relative;
+    width: 50%;
+    padding: 32px;
+    overflow: hidden;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__badge {
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: #666;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 16px;
+  }
+
+  &__nums {
+    color: #000;
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  &__unit {
+    color: #333;
+    font-size: 32px;
+    padding-bottom: 4px;
+
+    &--small {
+      color: #666;
+      font-size: 28px;
+      padding-left: 4px;
+      padding-bottom: 6px;
+    }
+  }
+
+  &__footer {
+    margin-top: 12px;
+    color: #999;
+    font-size: 24px;
+  }
+
+  &__percentage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+  }
+
+  &__percent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 16px;
+      background-color: #edf5fe;
+      border-radius: 6px;
+
+      &--ing {
+        background-color: #4579f5;
+      }
+    }
+
+    &-text {
+      color: #666;
+      font-size: 28px;
+    }
+  }
+
+  &__list {
+    padding: 6px 28px;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    line-height: 40px;
+    padding: 32px 0;
+    border-top: 1px solid #f2f3f3;
+
+    &--header {
+      border-top: 0;
+    }
+  }
+
+  &__cell {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    color: #333;
+
+    &--area {
+      justify-content: flex-start;
+    }
+
+    &--ing {
+      width: 36%;
+    }
+
+    &-num {
+      font-size: 28px;
+      color: #333;
+
+      &--blue {
+        font-size: 30px;
+        color: #0080ff;
+      }
+    }
+  }
+}
+
+.owl-echart-pie {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    color: #333;
+    margin: 12px 0;
+  }
+
+  &__text {
+    font-size: 32px;
+    color: #000;
+    margin: 12px 0;
+  }
+
+  &__desc {
+    font-size: 24px;
+    color: #999;
+    margin: 12px 0;
+  }
+}

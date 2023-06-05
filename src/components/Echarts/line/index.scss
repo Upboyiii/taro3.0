@@ -1,0 +1,33 @@
+
+/* owl-echart-line */
+.owl-echart-line {
+  position: relative;
+  background-color: #fff;
+  &__legend{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 32px 0;
+    margin-bottom: -94px;
+    &-item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 32px;
+    }
+    &-icon{
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      background-color: #0080ff;
+      border-radius: 6px;
+    }
+    &-text{
+      color: #666;
+      font-size: 24px;
+    }
+  }
+}

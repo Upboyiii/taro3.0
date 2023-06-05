@@ -1,0 +1,24 @@
+
+.owl-divider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+  &__text { color: #999; font-size: 24px; line-height: 24px; }
+  &__line {
+    flex: 1;
+    height: 0;
+    border-style: solid;
+    border-color: #f2f3f3;
+    border-width: 2px 0 0 0;
+    &--dashed{ border-style: dashed; }
+    &--dotted{ border-style: dotted; }
+    &--left  { margin-right: 24px;  }
+    &--right { margin-left: 24px; }
+    &--inline{ flex: 0 0 64px; }
+    &--hairline { transform: scaleY(0.5); }
+    &--align{ max-width: 10%; }
+  }
+}

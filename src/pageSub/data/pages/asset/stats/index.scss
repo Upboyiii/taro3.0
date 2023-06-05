@@ -1,0 +1,69 @@
+
+.funds-stats{
+  &__filter{
+    flex: 1;
+    height: 100%;
+    &-date{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0 32px;
+      height: 100%;
+    }
+    &-label{ font-size: 28px; }
+    &-time{ font-size: 28px; }
+    &-arrow{
+      width: 12px;
+      height: 12px;
+      margin: 0 0 6px 12px;
+      border: 0 solid #666;
+      border-width: 0 0 3px 3px;
+      transform: rotate(-45deg);
+      &--active{
+        border-color: #ff2340;
+        transform: rotate(135deg);
+        margin: 6px 0 0 12px;
+      }
+    }
+  }
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 32px;
+    &-wrap{ position: relative; }
+    &--header{
+      align-items: center;
+      height: 80px;
+      opacity: .5;
+      background-color: #f2f3f3;
+    }
+    &--refund{
+      align-items: center;
+      padding: 12px 24px;
+      margin: -4px 32px 24px;
+      background-color: #f7f8f8;
+      border-radius: 12px;
+    }
+    &-date{ flex: 1; font-size: 28px; &--small{ font-size: 24px; } }
+    &-in{ flex: 1; text-align: right; font-size: 28px; }
+    &-out{ flex: 1; text-align: right; font-size: 28px; }
+    &-price{
+      font-size: 28px;
+      color: #333;
+      text-align: right;
+      &--small{ font-size: 24px; }
+      &--in{ color: #00c35c; }
+      &--re{ color: #ff3447; }
+    }
+    &-count{
+      margin-top: 4px;
+      font-size: 28px;
+      color: #666;
+      text-align: right;
+      &--small{ font-size: 24px; margin: 0; }
+    }
+  }
+}

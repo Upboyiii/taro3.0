@@ -1,0 +1,49 @@
+
+.owl-date-filter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__btn{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    &--disbaled{ opacity: 0.3; }
+    &--time{ padding: 0; }
+    &-text{
+      font-size: 28px;
+      color: #333;
+      line-height: 40px;
+      &--time{ font-size: 32px; }
+    }
+    &-arrow{
+      width: 16px;
+      height: 16px;
+      border: 0 solid #999;
+      border-width: 2px 2px 0 0;
+      margin: 0 0 0 8px;
+      transform: rotate(45deg);
+      &--prev{ transform: rotate(-135deg); margin: 0 8px 0 0; }
+    }
+    &-triangle{
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 9px #666;
+      border-bottom-width: 0;
+      margin-left: 8px;
+    }
+  }
+  &__time{
+    position: relative;
+    padding: 24px;
+  }
+  &__desc{
+    font-size: 24px;
+    color: #999;
+    margin-top: 6px;
+  }
+}

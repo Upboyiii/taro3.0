@@ -1,0 +1,83 @@
+
+.after-sales{
+  padding: 0 24px 24px 24px;
+  &__system{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    &-content{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 6px 16px;
+      justify-content: center;
+      background-color: #eee;
+      border-radius: 99px;
+    }
+    &-text{
+      font-size: 22px;
+      color: #666;
+    }
+    &-time{
+      margin-top: 8px;
+      font-size: 20px;
+      color: #999;
+    }
+  }
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    &--merchant{
+      align-items: flex-end;
+    }
+  }
+  &__user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-name{ font-size: 24px; color: #666; &--merchant{ color: #ff2340; } }
+    &-time{ font-size: 20px; color: #999; }
+  }
+  &__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    max-width: 94%;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border: 1px solid #f2f3f3;
+    background-color: #f7f8f8;
+    border-radius: 6px 16px 16px 16px;
+    &--merchant{
+      align-items: flex-end;
+      border-radius: 16px 6px 16px 16px;
+      background-color: #fff;
+    }
+  }
+  &__pics{
+    position: relative;
+    margin: -8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  &__pic{
+    width: 96px;
+    height: 96px;
+    margin: 8px;
+    border-radius: 12px;
+  }
+  &__text{
+    color: #333;
+    line-height: 32px;
+    font-size: 24px;
+    &--blue{ color: #0080ff; }
+  }
+}

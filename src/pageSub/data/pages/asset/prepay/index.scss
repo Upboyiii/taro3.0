@@ -1,0 +1,118 @@
+
+.finance-preview{
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 24px;
+  padding: 32px;
+  background-color: #0080ff;
+  border-radius: 24px;
+  &__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    color: #fff;
+    font-size: 32px;
+  }
+  &__arrow{
+    width: 18px;
+    height: 18px;
+    border: 0 solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+  &__body{
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+  &__item{
+    flex: 1;
+    &-title{ color: rgba(255,255,255,.75); font-size: 26px; }
+    &-nums{
+      color: #fff;
+      margin-top: 16px;
+      font-size: 52px;
+      line-height: 60px;
+    }
+  }
+}
+
+.finance-tools{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item{
+    width: 33.3333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px;
+  }
+  &__icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+  }
+  &__title{ font-size: 28px; }
+}
+
+.finance-stats{
+  &__card{ flex: 1; overflow: hidden; }
+  &__header{
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 28px;
+    height: 96px;
+  }
+  &__title{ font-size: 28px; font-weight: bold; }
+  &__tabs{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    background-color: #f7f8f8;
+    border-radius: 99px;
+  }
+  &__tab{
+    color: #666;
+    line-height: 56px;
+    padding: 0 28px;
+    font-size: 24px;
+    border-radius: 99px;
+    &--active{
+      color: #333;
+      font-weight: bold;
+      background-color: #fff;
+    }
+  }
+  &__item{
+    position: relative;
+    padding: 20px 28px;
+  }
+  &__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0;
+    justify-content: space-between;
+    &-item{
+      display: flex;
+      flex-direction: row;
+    }
+    &-label{
+      color: #666;
+      font-size: 28px;
+    }
+  }
+}

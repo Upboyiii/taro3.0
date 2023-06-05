@@ -1,0 +1,23 @@
+
+.order-filter{
+  &__date{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 72px;
+    margin: -16px 0;
+    flex: 1;
+    &-item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+      color: #333;
+      &--placeholder{ color: #ccc; }
+    }
+    &-sep{
+      color: #999;
+      padding: 0 32px 0 0;
+    }
+  }
+}

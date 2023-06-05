@@ -1,0 +1,122 @@
+
+.owl-steps {
+  flex-shrink: 0;
+  position: relative;
+  &--horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px 32px;
+  }
+  &--vertical{
+    padding: 28px;
+  }
+}
+
+.owl-step {
+  position: relative;
+  &__indicator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &--horizontal{
+      flex-direction: row;
+      justify-content: center;
+      height: 32px;
+    }
+    &--vertical{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 24px;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+  }
+  &__icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 99px;
+    &--horizontal{ margin: 0 4px; }
+    &--checked {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--dot { width: 12px; height: 12px; background-color: #ccc; }
+    &--finish,
+    &--active { background-color: #00c35c;}
+  }
+  &__line {
+    flex: 1;
+    overflow: hidden;
+    background-color: #ccc;
+    border-radius: 999px;
+    opacity: 0.4;
+    &--finish,
+    &--active {
+      opacity: 1;
+      background-color: #00c35c;
+    }
+    &--horizontal{ height: 4px; }
+    &--vertical{ width: 4px; }
+  }
+  &__check{
+    width: 12px;
+    height: 8px;
+    margin-top: -3px;
+    border: 0 solid #fff;
+    border-width:  0 0 3px 3px;
+    transform: rotate(-45deg);
+  }
+  &__content {
+    &--horizontal{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &--vertical{
+      padding-bottom: 24px;
+      // &.owl-step__content--active{ padding-top: 6px; }
+    }
+    &--first { text-align: left; }
+    &--reverse { flex-direction: column-reverse; }
+  }
+  &__title {
+    position: relative;
+    margin: 8px 0;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ccc;
+    &--finish { color: #666; }
+    &--active { color: #00c35c; }
+  }
+  &__desc,
+  &__time{
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    font-size: 20px;
+    opacity: .75;
+    color: #999;
+    &--finish { color: #666; }
+    &--active { color: #666; }
+  }
+  &__desc{ opacity: .8 }
+  &__time{ opacity: .6; font-size: 18px; }
+  &--horizontal{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}

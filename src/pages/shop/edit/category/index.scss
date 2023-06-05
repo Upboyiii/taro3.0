@@ -1,0 +1,39 @@
+
+.select-category{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  &__selected{
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0 8px;
+    &-item{
+      flex-shrink: 0;
+      position: relative;
+      line-height: 96px;
+      overflow: hidden;
+      font-size: 28px;
+      padding: 0 24px;
+      &--active{
+        font-weight: bold;
+        color: #ff2340;
+      }
+    }
+    &-active{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 48px;
+      height: 5px;
+      margin-left: 0;
+      background-color: #ff2340;
+      border-radius: 4px;
+    }
+  }
+}

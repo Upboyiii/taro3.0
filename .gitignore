@@ -1,0 +1,12 @@
+/node_modules
+/.idea
+/.swc
+/dist
+/android/.gradle
+/android/.idea
+/android/build
+/android/app/build
+/src/assets/icons/data/*.psd
+/settings.gradle
+/.gradle
+/yarn.lock

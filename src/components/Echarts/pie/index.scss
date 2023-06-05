@@ -1,0 +1,34 @@
+
+/* echart-pie */
+.owl-echart-pie {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    font-size: 28px;
+    color: #333;
+    margin: 12px 0;
+  }
+  &__text{
+    font-size: 32px;
+    color: #000;
+    margin: 12px 0;
+  }
+  &__desc{
+    font-size: 24px;
+    color: #999;
+    margin: 12px 0;
+  }
+}

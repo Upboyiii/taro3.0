@@ -1,0 +1,15 @@
+
+/* bottom-bar */
+.owl-bottom-bar {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  // &--safeAreaBottom{ padding-bottom: 0; }
+  &--column{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,14 @@
+@import "./common.scss";
+
+.owl-skeleton {
+  &__action {
+    &--animate {
+      &-blink { animation: skeleton-blink 1.2s ease-in-out infinite; }
+      &-breathe {
+        background: linear-gradient(135deg, #f6f6f6 25%, #fafafa 44%, #f6f6f6 88%);
+        background-size: 400% 100%;
+        animation: skeleton-breathe 1.4s ease infinite;
+      }
+    }
+  }
+}

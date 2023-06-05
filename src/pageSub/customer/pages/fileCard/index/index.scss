@@ -1,0 +1,28 @@
+
+.customer-batch{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 76px;
+  padding-left: 8px;
+  justify-content: space-between;
+  &__group{
+    flex: 1;
+    margin-left: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item{
+    height: 72px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #e5e5e5;
+    border-left-width: 0;
+  }
+}

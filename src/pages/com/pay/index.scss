@@ -1,0 +1,63 @@
+
+.owl-payment{
+  &__total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    &-label{
+      font-size: 24px;
+      color: #666;
+    }
+    &-price{
+      margin-top: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    &-currency{
+      color: #ff2340;
+      font-size: 48px;
+      line-height: 64px;
+    }
+    &-integer{
+      color: #ff2340;
+      font-size: 64px;
+      line-height: 64px;
+    }
+    &-decimals{
+      color: #ff2340;
+      font-size: 48px;
+      line-height: 64px;
+    }
+  }
+  &__type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 12px;
+    &-item{
+      flex: 1;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      background-color: #fff;
+      border-radius: 24px;
+    }
+    &-icon{
+      width: 64px;
+      height: 64px;
+      margin-bottom: 24px;
+    }
+    &-name{
+      font-size: 32px;
+      // &--SCAN{ color: #ff2340; }
+      &--WX_PAY { color: #00c35c; }
+      &--ALIPAY { color: #0080ff; }
+    }
+  }
+}

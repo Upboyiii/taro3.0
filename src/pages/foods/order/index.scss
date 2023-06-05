@@ -1,0 +1,217 @@
+
+.foods-booking{
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  overflow: hidden;
+  height: 800px;
+  background-color: #fff;
+  &__aside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    overflow: hidden;
+    background-color: #fcfdfd;
+    &-item{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 210px;
+      height: 82px;
+      overflow: hidden;
+      padding-left: 24px;
+      padding-right: 16px;
+      border: 0 solid transparent;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      &--active{
+        color: #ff2340;
+        border-color: #f5f6f6;
+        background-color: #fff;
+        &-first{ border-top-color: #fff; }
+        &-last { border-bottom-color: #fff; }
+      }
+    }
+    &-text{
+      font-size: 26px;
+      overflow: hidden;
+      /*  #ifndef rn  */
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      /*  #endif  */
+      &--active{
+        font-weight: bold;
+        color: #ff2340;
+      }
+    }
+    &-badge{
+      flex-shrink: 0;
+      position: relative;
+      margin-top: -16px;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 0 5px;
+      color: #fff;
+      background-color: #ff2340;
+      border-radius: 99px;
+    }
+  }
+  &__content{
+    flex: 1;
+    background-color: #fff;
+  }
+  &__item{
+    margin: 12px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 66px;
+    font-size: 24px;
+    //border: 1px solid #f7f8f8;
+    background-color: #f7f8f8;
+    border-radius: 12px;
+    &-wrapper{ width: 50%; box-sizing: border-box; }
+    &--active{
+      color: #ff2340;
+      font-weight: bold;
+      //border-color: #ff2340;
+      background-color: #fff7f8;
+    }
+  }
+  &__goods{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 24px;
+    &--popup{ padding: 32px; margin-right: 64px; }
+    &-image{
+      flex-shrink: 0;
+      width: 128px;
+      height: 128px;
+      margin-right: 20px;
+      border-radius: 12px;
+    }
+    &-content{
+      flex: 1;
+      position: relative;
+      min-height: 128px;
+      padding-bottom: 60px;
+    }
+    &-title{
+      max-height: 72px;
+      overflow: hidden;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 36px;
+      /*  #ifndef rn  */
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      /*  #endif  */
+      &--popup{
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+    &-info{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-price{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      &__currency{
+        color: #ff2340;
+        font-size: 24px;
+        margin-bottom: 2px;
+      }
+      &__price{
+        color: #ff2340;
+        font-size: 32px;
+      }
+      &__unit{
+        color: #ff2340;
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  &__skus{
+    display: flex;
+    flex-direction: row;
+    max-height: 720px;
+  }
+  &__sku{
+    padding: 0 32px 20px 32px;
+    &-title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &-name{
+      font-size: 26px;
+    }
+    &-err{
+      font-size: 22px;
+      color: #ff2340;
+      margin-left: 16px;
+    }
+    &-group{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &-item{
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: bold;
+      padding: 8px 32px;
+      margin: 0 20px 20px 0;
+      background-color: #f2f3f3;
+      border-radius: 8px;
+      &--active{
+        //color: #fff;
+        //background-color: #ff2340;
+        color: #ff2340;
+        //font-weight: bold;
+        //border-color: #ff2340;
+        background-color: #fff7f8;
+      }
+    }
+  }
+  &__action{
+    position: relative;
+    padding: 32px 32px 36px 32px;
+    overflow: hidden;
+    &-label{
+      font-size: 26px;
+      font-weight: bold;
+    }
+    &-nums{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+  }
+  &__cart{
+    flex: 1;
+  }
+}

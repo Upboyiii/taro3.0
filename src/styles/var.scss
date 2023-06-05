@@ -1,0 +1,244 @@
+$hd: 2 !default; // 基本单位
+$color-brand: #ff2340 !default;
+$color-success: #00c35c !default;
+$color-info: #0080ff !default;
+$color-warning: #ff7e00 !default;
+$color-error: #ff3447 !default;
+$color-purple: #d513ff !default;
+
+$color-text-link: #0080ff !default;
+$color-text-base: #333 !default;
+$color-text-secondary: #00d464 !default;
+$color-text-placeholder: #ccc !default;
+$color-text-disabled: #ccc !default;
+$color-text-title: #333 !default;
+$color-text-paragraph: #666 !default;
+
+$color-grey-0: #333 !default;
+$color-grey-1: #666 !default;
+$color-grey-2: #999 !default;
+$color-grey-3: #ccc !default;
+$color-grey-4: #eee !default;
+
+$color-white: #fff !default;
+$color-bg-dark: #f2f2f2 !default;
+$color-bg-base: #f6f6f6 !default;
+$color-bg-light: #f9f9f9 !default;
+$color-bg-lighter: #fafafa !default;
+$color-bg-brand: mix(#fff, $color-brand, 93%) !default;
+$color-bg-success: mix(#fff, $color-success, 93%) !default;
+$color-bg-info: mix(#fff, $color-info, 93%) !default;
+$color-bg-warning: mix(#fff, $color-warning, 93%) !default;
+$color-bg-error:mix(#fff, $color-error, 93%) !default;
+
+/* 字体大小 */
+$font-size-xs: 10px * $hd !default;
+$font-size-sm: 12px * $hd !default;
+$font-size-base: 14px * $hd !default;
+$font-size-lg: 16px * $hd !default;
+$font-size-xl: 18px * $hd !default;
+$font-size-xxl: 24px * $hd !default;
+
+/* line-height-base */
+$line-height-xxs: 12px * $hd !default;
+$line-height-xs: 16px * $hd !default;
+$line-height-sm: 18px * $hd !default;
+$line-height-base: 20px * $hd !default;
+$line-height-md: 22px * $hd !default;
+$line-height-lg: 24px * $hd !default;
+$line-height-xl: 32px * $hd !default;
+$line-height-xxl: 36px * $hd !default;
+
+/* padding间距 */
+$padding-v-xs: 4px * $hd !default;
+$padding-v-sm: 8px * $hd !default;
+$padding-v-base: 12px * $hd !default;
+$padding-v-lg: 16px * $hd !default;
+$padding-v-xl: 24px * $hd !default;
+$padding-v-xxl: 32px * $hd !default;
+$padding-h-xs: 6px * $hd !default;
+$padding-h-sm: 10px * $hd !default;
+$padding-h-base: 14px * $hd !default;
+$padding-h-lg: 20px * $hd !default;
+
+/* margin间距 */
+$margin-xxs: 4px * $hd !default;
+$margin-xs: 8px * $hd !default;
+$margin-sm: 12px * $hd !default;
+$margin-base: 16px * $hd !default;
+$margin-lg: 20px * $hd !default;
+$margin-xl: 24px * $hd !default;
+$margin-xxl: 32px * $hd !default;
+
+/* 图标尺寸 */
+$icon-size-xs: 12px * $hd !default;
+$icon-size-sm: 16px * $hd !default;
+$icon-size-md: 24px * $hd !default;
+$icon-size-lg: 36px * $hd !default;
+
+/* border-radius */
+$border-radius-sm: 3px * $hd !default;
+$border-radius-md: 6px * $hd !default;
+$border-radius-lg: 9px * $hd !default;
+$border-radius-xl: 12px * $hd !default;
+$border-radius-xxl: 18px * $hd !default;
+$border-radius-circle: 50% !default;
+$border-radius-full: 999px !default;
+
+/* button */
+$at-button-height: 38px * $hd !default;
+$at-button-height-sm: 30px * $hd !default;
+$at-button-height-lg: 50px * $hd !default;
+$at-button-font-size: 14px * $hd !default;
+$at-button-font-size-sm: 12px * $hd !default;
+
+/* rate */
+$at-rate-star-color: $color-grey-2 !default;
+$at-rate-star-color-on: $color-brand !default;
+$at-rate-icon-margin: $margin-xs !default;
+$at-rate-icon-size: $font-size-xxl !default;
+
+/* ImagePicker */
+$at-image-picker-btn-add-color: $color-grey-2 !default;
+$at-image-picker-btn-remove-color: $color-white !default;
+$at-image-picker-btn-remove-bg-color: $color-grey-1 !default;
+
+/* swicth */
+$swicth-width: 34px * $hd !default;
+$swicth-height: 20px * $hd !default;
+$swicth-handel-width: 17px * $hd !default;
+$swicth-handel-offset: 28px !default;
+
+/* card */
+$card-font-size: $font-size-base !default;
+$card-margin-h: $margin-sm !default;
+$card-margin-v: $margin-sm !default;
+$card-margin: $margin-sm $margin-sm !default;
+$card-padding-h: $padding-h-base !default;
+$card-padding-v: $padding-v-base !default;
+$card-border-radius: $border-radius-lg !default;
+
+/**/
+$animation-duration-fast: .2s !default;
+$disabled-opacity: 0.3 !default;
+
+/* ios 底部安全距离 */
+@mixin safe-area-inset-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+@mixin safe-area-margin-bottom {
+  margin-bottom: constant(safe-area-inset-bottom);
+  margin-bottom: env(safe-area-inset-bottom);
+}
+/* ios 顶部安全距离 */
+@mixin safe-area-inset-top {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+/* 文字一行超出显示省略号 */
+@mixin ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 多行文字超出显示省略号 */
+@mixin multi-ellipsis($number: 2, $maxheight: 0) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+  @if $maxheight > 0 {
+    max-height: $maxheight * $number;
+  }
+}
+
+/* 为元素添加 Retina 屏幕下的 1px 边框 */
+@mixin hairline($position: all, $type: after ,$color: #f2f2f2, $radius: 0){
+  &::#{$type} {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: $color;
+    border-radius: $radius;
+    z-index: 1;
+    @if $position == 'top' {
+      border-width: 1PX 0 0 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: scaleY(0.5);
+      transform-origin: 0 0;
+    }
+    @else if $position == 'bottom' {
+      border-width: 0 0 1PX 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      transform: scaleY(0.5);
+      transform-origin: 0 100%;
+    }
+    @else if $position == 'left' {
+      border-width: 0 0 0 1PX;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0.5);
+      transform-origin: 0 0;
+    }
+    @else if $position == 'right' {
+      border-width: 0 1PX 0 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: scaleX(0.5);
+      transform-origin: 100% 0;
+    }
+    @else {
+      border-width: 1PX;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      transform: scale(0.5);
+      transform-origin: center center;
+    }
+  }
+}
+
+/* 三角形箭头 */
+@mixin arrow($position: bottom, $type: after, $size: 8px, $color: $color-grey-2){
+  &::#{$type} {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    color: $color;
+    border-style: solid;
+    border-width: $size;
+    border-color: transparent;
+    @if $position == "top" {
+      border-top-width: 0;
+      border-bottom-color: currentColor;
+    }
+    @else if $position == "right" {
+      border-left-width: 0;
+      border-right-color: currentColor;
+    }
+    @else if $position == "bottom" {
+      border-bottom-width: 0;
+      border-top-color: currentColor;
+    }
+    @else if $position == "left" {
+      border-right-width: 0;
+      border-left-color: currentColor;
+    }
+  }
+}
+

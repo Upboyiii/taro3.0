@@ -1,0 +1,99 @@
+
+.foods-status{
+  padding-top: 24px;
+  &__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 48px 16px 48px;
+    &-name{
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+  &__item{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-width: 40%;
+    max-width: 339px;
+    padding-bottom: 48px;
+    margin: 0 12px 24px 12px;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+  &__desk{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 24px;
+    background-color: #f2f3f3;
+
+    &--11 { background-color: #fff7ee; }
+    &--22 { background-color: #fff1f3; }
+    &--33 { background-color: #eaf4ff; }
+    &--44 { background-color: #fee7ff; }
+    &--3  { background-color: #e8f1ff; }
+
+    /*  #ifndef rn  */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*  #endif  */
+
+    &-name{
+      font-size: 36px;
+      line-height: 40px;
+      &--11 { color: #ff7e00; }
+      &--22 { color: #ff2340; }
+      &--33 { color: #0074ff; }
+      &--44 { color: #c507d1; }
+      &--3  { color: #006cff; }
+    }
+    &-badge{
+      font-size: 16px;
+      color: #666;
+      margin-left: 4px;
+      margin-top: 4px;
+    }
+  }
+  &__info{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 24px;
+    min-height: 112px;
+  }
+  &__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    height: 36px;
+    &-label{ font-size: 24px; color: #666; }
+    &-num  { font-size: 26px; color: #333; }
+    &-unit { font-size: 24px; color: #666; }
+  }
+  &__footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 24px 20px 24px;
+  }
+  &__state{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
